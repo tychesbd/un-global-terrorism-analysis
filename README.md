@@ -42,11 +42,11 @@ The analysis follows the academic **UBM Rule** — Univariate → Bivariate → 
 
 | Attribute | Details |
 |---|---|
-| **Source** | Global Terrorism Database (GTD) — START, University of Maryland |
+| **Source** | UN Global Terrorism.csv - Alma Better|
 | **Time Span** | 1970 – 2017 (47 years) |
 | **Total Records** | ~181,691 terrorist incidents |
 | **Total Features** | 135 columns |
-| **File Name** | `globalterrorismdb_0718dist.csv` |
+| **File Name** | `un_global_terrorism.csv` |
 | **Encoding** | Latin-1 |
 | **Size** | ~150 MB |
 
@@ -67,7 +67,7 @@ The analysis follows the academic **UBM Rule** — Univariate → Bivariate → 
 | `suicide` | Whether it was a suicide attack |
 | `success` | Whether the attack succeeded |
 
-> ⚠️ The dataset is **not included** in this repository due to its large size. Download it from [Kaggle — Global Terrorism Database](https://www.kaggle.com/datasets/START-UMD/gtd) and place the CSV in the root project directory.
+> ⚠️ The dataset is **not included** in this repository due to its large size. Download it from Alma Better) and place the CSV in the root project directory.
 
 ---
 
@@ -191,12 +191,7 @@ un-global-terrorism-eda/
 ├── 📄 requirements.txt                  ← Python dependencies
 │
 ├── 📂 data/                             ← (gitignored — download separately)
-│   └── globalterrorismdb_0718dist.csv
-│
-└── 📂 assets/                           ← (optional) exported chart images
-    ├── chart_01_attacks_per_year.png
-    ├── chart_02_attack_types.png
-    └── ...
+│   └── un_global_terrorism.csv
 ```
 
 ---
@@ -210,7 +205,7 @@ un-global-terrorism-eda/
 3. Upload the dataset CSV to the Colab session storage:
    ```python
    from google.colab import files
-   files.upload()  # select globalterrorismdb_0718dist.csv
+   files.upload()  # select un_global_terrorism.csv
    ```
 4. Click **Runtime → Run All**
 
@@ -296,7 +291,7 @@ notebook>=6.5.0
 
 **[Shiv Bijay Deep]**
 - 📧 Email: tychesbd@gmail.com
-- 🔗 LinkedIn: [linkedin.com/in/shivbijaydeep](https://linkedin.com/in/yourprofile)
+- 🔗 LinkedIn: [linkedin.com/in/shivbijaydeep](https://linkedin.com/in/shivbijaydeep)
 - 🐙 GitHub: [github.com/tychesbd](https://github.com/tychesbd)
 
 ---
